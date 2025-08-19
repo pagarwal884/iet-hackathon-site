@@ -358,15 +358,20 @@ export function AboutPage() {
       <Navbar />
       <main className="mx-auto max-w-6xl px-4 py-12">
         <SectionHeader
-          title="What is HackanRoll?"
-          subtitle="8 hours, live mentorship, real teamwork, and hands-on experience — HacknRoll by IET, MLSU."
-          align="left"
-        />
-        <p className="text-slate-300 leading-relaxed max-w-3xl">
-          HacknRoll is an 8-hour sprint-style hackathon designed to give developers hands-on experience, live mentorship, and guidance on effective teamwork. Participants will learn how to collaborate efficiently, generate innovative ideas, and build projects together, all within a single, action-packed day.
-        </p>
+  title="What is HackanRoll?"
+  subtitle="8 hours, live mentorship, real teamwork, and hands-on experience — HacknRoll by IET, MLSU."
+  align="left"
+/>
 
-        <AboutUs />
+<p className="text-slate-300 leading-relaxed text-left w-full">
+  HacknRoll is an 8-hour sprint-style hackathon designed to give developers
+  hands-on experience, live mentorship, and guidance on effective teamwork.
+  Participants will learn how to collaborate efficiently, generate innovative
+  ideas, and build projects together, all within a single, action-packed day.
+</p>
+
+<AboutUs />
+
 
         <SectionHeader title="FAQs" align="left" />
         <FAQAccordion items={eventConfig.faqs} />
