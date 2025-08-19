@@ -89,7 +89,15 @@ export function SectionHeader({ title, subtitle, align = "center" }) {
   return (
     <div className={`mb-8 ${align === "left" ? "text-left" : "text-center"}`}>
       <h2 className="display-title text-2xl md:text-3xl font-semibold text-white tracking-tight">{title}</h2>
-      {subtitle && <p className="mt-2 text-slate-300 max-w-3xl mx-auto">{subtitle}</p>}
+      {subtitle && (
+  <p
+    className={`mt-2 text-slate-300 max-w-3xl ${
+      align === "left" ? "" : "mx-auto"
+    }`}
+  >
+    {subtitle}
+  </p>
+)}
     </div>
   );
 }
